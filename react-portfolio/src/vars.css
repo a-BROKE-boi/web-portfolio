@@ -1,0 +1,11 @@
+:root {
+  /* colours */
+  --color-text: #ffffff;
+  --color-primary: hsl(228, 68%, 62%);
+  --color-secondary: #5ecdff;
+  --color-dark: #800000;
+  --color-bg: #000000;
+
+  /* Fonts */
+  --font-permanent-marker: "permanent-marker";
+}
