@@ -4,8 +4,13 @@ import styles from "./Body.module.css";
 
 export const Body = () => {
   return (
-    <div>
-      <button className={styles.btn}>wozers more</button>
-    </div>
+    <>
+      {/* <div className={styles.menu}>
+        <div className={styles.toggle}></div>
+        <li style="--i:0">
+          <a href="#"></a>
+        </li>
+      </div> */}
+    </>
   );
 };
