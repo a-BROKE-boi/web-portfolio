@@ -17,57 +17,52 @@
 
 .parallelogram {
   width: 100px;
-  height: 60px;
+  height: 65px;
   transform: skew(30deg);
   background-color: white;
   margin: auto;
   position: relative;
-  animation-name: example;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
-.child :hover {
+.parallelogram:hover {
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+.child {
+  top: 50px;
+  left: 200px;
   width: 80px;
   height: 40px;
   background-color: red;
-  transform: skew(20deg);
+  transform: skew(30deg);
   position: absolute;
-  top: 50px;
-  left: 200px;
+}
+.child:hover {
+  border-color: aqua;
+  border-style: solid;
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes example {
   0% {
-    left: 0px;
-    top: 0px;
   }
   25% {
-    left: 4px;
-    top: 0px;
-    width: 140px;
-    height: 70px;
-    transform: skew(30deg);
+    rotate: 5deg;
   }
   50% {
-    left: 4px;
-    top: 4px;
-    width: 120px;
-    height: 50px;
-    transform: skew(-20deg);
+    transform: skew(10deg);
   }
   75% {
-    left: 0px;
-    top: 4px;
+    rotate: -5deg;
   }
   100% {
-    left: 0px;
-    top: 0px;
   }
 }
 
 .text {
-  transform: skew(-20deg); /* UNSKEW */
+  transform: skew(-30deg); /* UNSKEW */
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;

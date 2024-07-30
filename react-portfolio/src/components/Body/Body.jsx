@@ -13,7 +13,7 @@ export const Body = () => {
         <li>Milk</li>
       </ul>
       <div className={styles.box}>
-        <h2>Parallelogram CSS</h2>
+        <h2 className={styles.text}>Parallelogram CSS</h2>
         <div className={styles.parallelogram}></div>
         <div className={styles.child}>
           <h2 className={styles.text}>hello</h2>
