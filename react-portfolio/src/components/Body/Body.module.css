@@ -1,10 +1,16 @@
 @import "../../vars.css";
 
-.menu {
-  list-style-type: upper-roman;
-  padding: 5%;
-  background-color: rgb(255, 0, 0);
-  text-align: center;
+.flexContainer {
+  display: flex;
+}
+
+.flexChild {
+  flex: 1;
+  border: 5px solid rgb(56, 56, 56);
+}
+
+.flexChild:first-child {
+  margin-right: 0px;
 }
 .box {
   height: 200px;
@@ -12,6 +18,11 @@
   width: 50%;
   border: 5px solid rgb(255, 255, 255);
   padding: 10px;
+  position: relative;
+}
+
+.container {
+  margin: auto;
   position: relative;
 }
 
@@ -24,13 +35,13 @@
   position: relative;
 }
 .parallelogram:hover {
-  animation-name: example;
+  animation-name: wiggleAnimation;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
 }
 .child {
   top: 50px;
-  left: 200px;
+  left: 50%;
   width: 80px;
   height: 40px;
   background-color: red;
@@ -38,14 +49,12 @@
   position: absolute;
 }
 .child:hover {
-  border-color: aqua;
-  border-style: solid;
-  animation-name: example;
+  animation-name: wiggleAnimation;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
 }
 
-@keyframes example {
+@keyframes wiggleAnimation {
   0% {
   }
   25% {
@@ -66,4 +75,15 @@
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.text:hover {
+  animation-name: wiggleAnimation;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.imageAlignRight {
+  float: right;
+  margin-left: 10px; /* Add some space between the image and text */
+  max-width: 100%;
 }

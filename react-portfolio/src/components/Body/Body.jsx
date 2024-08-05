@@ -7,33 +7,28 @@ export const Body = () => {
   const text = "Framer Motion is a really cool tool".split(" ");
   return (
     <>
-      <ul className={styles.menu}>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-      </ul>
-      <div className={styles.box}>
-        <h2 className={styles.text}>Parallelogram CSS</h2>
-        <div className={styles.parallelogram}></div>
-        <div className={styles.child}>
-          <h2 className={styles.text}>hello</h2>
+      <div className={styles.flexContainer}>
+        <div className={styles.flexChild}>
+          {" "}
+          <div className={styles.box}>
+            <h2 className={styles.text}>Parallelogram CSS</h2>
+            <div className={styles.parallelogram}></div>
+            <div className={styles.child}>
+              <h2 className={styles.text}>hello</h2>
+            </div>
+          </div>
+        </div>
+        <div className={styles.flexChild}>
+          {" "}
+          <div className={styles.container}>
+            <img
+              className={styles.imageAlignRight}
+              src="src/assets/Gigachad-PNG-Images.png"
+              alt="Cool guy"
+            ></img>
+          </div>
         </div>
       </div>
-      <h2>
-        {text.map((el, i) => (
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 0.25,
-              delay: i / 10,
-            }}
-            key={i}
-          >
-            {el}{" "}
-          </motion.span>
-        ))}
-      </h2>
     </>
   );
 };
