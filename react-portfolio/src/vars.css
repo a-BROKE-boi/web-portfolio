@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Black+Ops+One);
+
 :root {
   /* colours */
   --color-text: #ffffff;
@@ -7,5 +9,6 @@
   --color-bg: #000000;
 
   /* Fonts */
+  --font-black-ops: "Black Ops One";
   --font-permanent-marker: "permanent-marker";
 }
