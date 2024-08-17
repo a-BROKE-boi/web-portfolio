@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Black+Ops+One);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
 
 :root {
   /* colours */
@@ -6,9 +7,10 @@
   --color-primary: hsl(228, 68%, 62%);
   --color-secondary: #5ecdff;
   --color-dark: #800000;
-  --color-bg: #000000;
+  --color-bg: #747474;
 
   /* Fonts */
   --font-black-ops: "Black Ops One";
+  --font-Righteous: "Righteous";
   --font-permanent-marker: "permanent-marker";
 }
