@@ -17,14 +17,15 @@ export const Navbar = () => {
                 Bio
               </a>
             </li>
-            <li className={styles.item}>
-              <a className={styles.linktext} href="#art">
-                Art
-              </a>
-            </li>
+
             <li className={styles.item}>
               <a className={styles.linktext} href="#projects">
                 Projects
+              </a>
+            </li>
+            <li className={styles.item}>
+              <a className={styles.linktext} href="#art">
+                Art
               </a>
             </li>
             <li className={styles.item}>

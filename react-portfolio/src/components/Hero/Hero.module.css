@@ -32,6 +32,7 @@
 .description {
   font-size: 30px;
   font-family: var(--font-permanent-marker);
+  margin: 10px;
   margin-bottom: 52px;
 }
 
